@@ -3,7 +3,7 @@ if (!exists("df")) source("loadData.R")
 par(mfrow=c(1,1))
 png(filename="plot3.png",width=504,height=504)
 
-with(data, {
+with(df, {
   plot(DateTime, Sub_metering_1, type="l", main="", cex.lab=1.0, cex.axis=1.0, 
        xlab="", ylab="Energy sub metering", yaxp= c(0, 30, 3));
   lines(DateTime, Sub_metering_2, col="red");

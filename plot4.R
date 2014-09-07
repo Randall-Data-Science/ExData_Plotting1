@@ -17,7 +17,7 @@ with(df, {
   lines(DateTime, Sub_metering_2, col="red");
   lines(DateTime, Sub_metering_3, col="blue");
   legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1,
-         col= c("black", "red", "blue"), fill="white", border = "white", box.lwd = 0);
+         col= c("black", "red", "blue"), bty = "n");
 })
 
 #3

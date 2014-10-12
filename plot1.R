@@ -1,4 +1,4 @@
-if (!exists("df")) source("loadData.R")
+if (!exists("df", mode = "list")) source("loadData.R")
 
 # `df` is a dataframe loaded by `loadData.R` if not already present in the
 # current environment. It has the following structure:

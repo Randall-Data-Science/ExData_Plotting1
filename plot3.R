@@ -1,4 +1,4 @@
-if (!exists("df")) source("loadData.R")
+if (!exists("df", mode = "list")) source("loadData.R")
 
 par(mfrow = c(1, 1))
 png(filename="plot3.png", width=480, height=480)

@@ -1,4 +1,4 @@
-if (!exists("df")) source("loadData.R")
+if (!exists("df", mode = "list")) source("loadData.R")
 
 png(filename="plot4.png", width=480, height=480)
 par(mfcol=c(2,2), 
@@ -24,13 +24,13 @@ with(df, {
 
 #3
 with(df,{
-  plot(DateTime, Voltage, xlab="DateTime", type="l");
+  plot(DateTime, Voltage, xlab="datetime", type="l");
 })
 
 #4
 with(df,{
   plot(DateTime, Global_reactive_power, type="l",
-        xlab="DateTime");
+        xlab="datetime");
 })
 
 dev.off()

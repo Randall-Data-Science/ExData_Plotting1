@@ -13,17 +13,15 @@ if (!exists("df")) source("loadData.R")
 # $ Sub_metering_2       : num  0 0 0 0 0 0 0 0 0 0 ...
 # $ Sub_metering_3       : num  0 0 0 0 0 0 0 0 0 0 ...
 
-
-
 par(mfrow=c(1,1))
-png(filename="plot1.png", width=504, height=504)
+png(filename="plot1.png", width=480, height=480)
 
 with(data = df,
-     hist(
-         Global_active_power, 
-         col="red", 
-         xlab="Global Active Power (kilowatts)", 
-         main = "Global Active Power")
+     hist(Global_active_power, 
+          col="red", 
+          xlab="Global Active Power (kilowatts)", 
+          main = "Global Active Power"
+     )
 )
 
 dev.off()

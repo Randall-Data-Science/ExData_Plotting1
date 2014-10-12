@@ -1,7 +1,7 @@
 if (!exists("df")) source("loadData.R")
 
 par(mfrow=c(1,1))
-png(filename="plot2.png", width=504, height=504)
+png(filename="plot2.png", width=480, height=480)
 
 with(df, {
     plot(DateTime, Global_active_power, type="n", main="", cex.lab=1,

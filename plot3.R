@@ -1,7 +1,7 @@
 if (!exists("df")) source("loadData.R")
 
-par(mfrow=c(1,1))
-png(filename="plot3.png",width=504,height=504)
+par(mfrow = c(1, 1))
+png(filename="plot3.png", width=480, height=480)
 
 with(df, {
   plot(DateTime, Sub_metering_1, type="l", main="", cex.lab=1.0, cex.axis=1.0, 

@@ -15,6 +15,8 @@ if (!exists("df", mode = "list")) source("loadData.R")
 
 par(mfrow=c(1,1))
 png(filename="plot1.png", width=480, height=480)
+# For whatever reason the plots are 504x504 px, but the directions
+# specify 480x480 px.
 
 with(data = df,
      hist(Global_active_power, 

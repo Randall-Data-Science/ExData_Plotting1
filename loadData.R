@@ -1,5 +1,6 @@
 if (!require("dplyr")) {install.packages("dplyr"); library(dplyr)}
 ## See notes on Dplyr at end
+
 if (!file.exists("data/household_power_consumption.txt")) {
     download.file(
         url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", 
@@ -33,7 +34,7 @@ df <- select(.data = df, DateTime, Global_active_power, Global_reactive_power,
 
 ## Dplyr is a library created by Hadley Wickham as a next generation replacement
 ## for his collection of data manipulation functions in plyr. The most notable
-## improvements are significantly faster speed similar to `data.table`, and the 
+## improvements are significantly faster speed, similar to `data.table`, and the 
 ## use of a "pipe" operator from `magrittr`. The pipe operation written as 
 ## `%>%` makes it possible to flatten nested functions. For example:
 ##
@@ -45,3 +46,6 @@ df <- select(.data = df, DateTime, Global_active_power, Global_reactive_power,
 ##
 ## Though not very useful in this example, it can be very convenient when 
 ## nesting multiple operations on data.
+##
+## Hadley Wickham works at RStudio, so dplyr might be considered a standard 
+## part of a toolset involving RStudio—much like RMarkdown, knittr, and Shiny.

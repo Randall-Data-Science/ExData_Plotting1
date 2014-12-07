@@ -4,8 +4,8 @@ par(mfrow=c(1,1))
 png(filename="plot2.png", width=480, height=480)
 
 with(df, {
-    plot(DateTime, Global_active_power, type="n", main="", cex.lab=1,
-         cex.axis=1, xlab="", ylab="Global Active Power (kilowatts)");
+    plot(DateTime, Global_active_power, type = "n", 
+         ylab = "Global Active Power (kilowatts)", xlab = "")
     lines(DateTime, Global_active_power, lwd=1)
 })
 
